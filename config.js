@@ -1,7 +1,8 @@
 URL = 'https://mall.yataisannong.com';
+DIR_IMG = 'widget://assets/image/';
 
 requirejs.config({
-    baseUrl: '',
+    baseUrl: '../../',
     paths: {
         vue: 'assets/js/vue.min',
         jquery: 'assets/js/jquery-3.5.1.min',
