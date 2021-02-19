@@ -1,0 +1,31 @@
+.ui-loading-view {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+    z-index: 100;
+}
+
+.ui-loading-icon {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background: #eee;
+    overflow: hidden;
+}
+
+.ui-loading-icon img {
+    display: block;
+    width: 100%
+}
+
+.ui-loading-dot {
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    margin: 0.1rem 0.04rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}

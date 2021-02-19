@@ -9,7 +9,7 @@ requirejs.config({
         doT: 'assets/js/doT.min',
         md5: 'assets/js/md5.min',
         anime: 'assets/js/anime.min',
-        swiper: 'assets/js/swiper/swiper-bundle.min'
+        swiper: 'assets/js/swiper/swiper-bundle.min',
     },
     map: {
         '*': {

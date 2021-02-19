@@ -5,97 +5,54 @@
     <meta charset="utf-8">
     <meta name="viewport" />
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../../css/api.css" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/base.css" />
+    <script type="text/javascript" src="../../assets/js/require/require.js"></script>
+    <script type="text/javascript" src="../../config.js"></script>
     <style type="text/css">
-        footer ul {
-            width: 100%;
-            height: 3.125rem;
-            border: 1px solid #eee;
-            background: #fff;
-        }
 
-        footer ul li {
-            font-size: 0.75rem;
-            color: #ccc;
-        }
-
-        footer ul li.on {
-            color: #3B424C;
-        }
-
-        footer ul li i.iconfont {
-            font-size: 1.5rem;
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            line-height: 1em;
-            text-align: center;
-        }
-
-        .wrapper {
-            height: 20rem;
-            overflow: hidden;
-        }
-
-        .box {
-            margin: 1rem;
-            background: #999;
-            height: 10rem;
-        }
     </style>
 </head>
 
-<body class="fmix-v">
-    <section id="main" class="flex-con">
-        <div class="wrapper">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-    </section>
-    <footer></footer>
+<body>
+    <div id="page">
+
+    </div>
 </body>
 
-<script type="text/javascript" src="../../script/api.js"></script>
 <script type="text/javascript">
-    var footObj = {
-        data: [{
-            name: '首页',
-            icon: '&#xe925;',
-        }, {
-            name: '福利',
-            icon: '&#xe918;',
-        }, {
-            name: 'VIP',
-            icon: '&#xe91e;',
-        }, {
-            name: '我的',
-            icon: '&#xe920;',
-        }],
-        index: 0,
-        init: function() {
-            $api.dom('footer').innerHTML = this.tpl();
-        },
-        tpl: function(data) {
-            data = data || this.data;
-            for (var i = 0, html = '', ln = data.length; i < ln; i++) {
-                var o = data[i];
-                var cls = i == this.index ? 'on' : '';
-                html += `<li class="flex-con fmix-center-v ${cls}">
-                    <i class="iconfont">${o.icon}</i>
-                    <p>${o.name}</p>
-                </li>`;
-            }
-            return html ? `<ul class="flex-wrap">${html}</ul>` : html;
-        }
-    };
-    apiready = function() {
-        // console.log('win:'+api.winName);
-        footObj.init();
+    function appGlobe(ops) {
 
-    };
+
+    }
+    ready(['components/LoadingView'], function(Loading) {
+        api.removeLaunchView();
+        Loading.open();
+
+        // appGlobe({
+        //     data: {
+        //         TOKEN: '',
+        //         USER_INFO: '',
+        //     },
+        //     events: {
+        //         LOGIN: function() {
+        //
+        //         },
+        //         LOGOUT: function() {
+        //
+        //         },
+        //         APPSHOW: function() {
+        //
+        //         },
+        //         APPHIDE: function() {
+        //
+        //         }
+        //     }
+        // });
+
+        setTimeout(function() {
+            Loading.close();
+        }, 2000)
+    })
 </script>
 
 </html>

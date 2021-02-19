@@ -1,12 +1,12 @@
-define(['anime', 'doT', 'jquery'], function(anime, doT, $) {
-    var tpl = `<div id="loading_view_{{=it.id}}" class="loading-view fmix-center-v">
-        <div class="loading-icon">
+define(['anime', 'doT', 'jquery', 'css!assets/css/ui.css'], function(anime, doT, $) {
+    var tpl = `<div id="loading_view_{{=it.id}}" class="ui-loading-view fmix-center-v">
+        <div class="ui-loading-icon">
             <img src="{{=it.icon}}" />
         </div>
         <div class="fmix-center">
-            <div class="loading-dot"></div>
-            <div class="loading-dot"></div>
-            <div class="loading-dot"></div>
+            <div class="ui-loading-dot"></div>
+            <div class="ui-loading-dot"></div>
+            <div class="ui-loading-dot"></div>
         </div>
     </div>`;
     var tplFn = doT.template(tpl);
@@ -21,7 +21,7 @@ define(['anime', 'doT', 'jquery'], function(anime, doT, $) {
                 id: id
             }));
             anime({
-                targets: '.loading-view .loading-dot',
+                targets: '.ui-loading-view .ui-loading-dot',
                 backgroundColor: 'rgba(0,0,0,0.6)',
                 easing: 'linear',
                 // direction: 'alternate',
