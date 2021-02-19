@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+}
+
+body {
+    font-family: Arial, Helvetica, Sans-Serif;
+    font-size: 0.14rem;
+}
+
+header, footer, section {
+    position: relative;
+}
+
+input, button, textarea {
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    line-height: 1em;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-appearance: none;
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+
+/*iconfont*/
+
+
+/*@font-face {
+    font-family: 'iconfont';
+    src: url('./iconfont.ttf') format('truetype');
+}*/
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1037905 */
+    src: url('http://at.alicdn.com/t/font_1037905_ip6xw7cix4.eot');
+    src: url('http://at.alicdn.com/t/font_1037905_ip6xw7cix4.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_1037905_ip6xw7cix4.woff2') format('woff2'), url('http://at.alicdn.com/t/font_1037905_ip6xw7cix4.woff') format('woff'), url('http://at.alicdn.com/t/font_1037905_ip6xw7cix4.ttf') format('truetype'), url('http://at.alicdn.com/t/font_1037905_ip6xw7cix4.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*自动隐藏文字*/
+
+.ellipsis-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.ellipsis-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/*-flex- start*/
+
+.flex-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-con {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.flex-vertical {
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+.flex-align {
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.flex-align-end {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.flex-justify {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.flex-justify-sa {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+
+.flex-justify-sb {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flex-justify-end {
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.flex-linefeed {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.fmix-v {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+.fmix-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.fmix-center-v {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+.fmix-align {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.fmix-align-sa {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.fmix-align-sb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.fmix-vertical-sb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+
+/*-flex- end*/
